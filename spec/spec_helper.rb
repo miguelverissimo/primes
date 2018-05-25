@@ -11,4 +11,9 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  def support_path
+    File.expand_path(File.join(File.dirname(__FILE__), 'support'))
+  end
+
 end

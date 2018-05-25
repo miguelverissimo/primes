@@ -1,7 +1,7 @@
 RSpec.describe Primes::Cache do
   before(:all) do
-    @dummy_file_path = './cache/foo.txt'
-    @valid_file_path = './cache/primes.txt'
+    @dummy_file_path = support_path + '/foo.txt'
+    @valid_file_path = support_path + '/primes.txt'
     @cache = Primes::Cache.new(@dummy_file_path)
   end
 
