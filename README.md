@@ -8,6 +8,10 @@ Clone the repo:
 
     $ git clone https://github.com/miguelverissimo/primes
 
+Navigate to the gem's directory and install dependencies:
+
+    $ cd primes && bunde install
+
 ...Make sure tests are passing:
 
     $ rake
