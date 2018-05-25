@@ -37,7 +37,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   primes!
-  pry-byebug
+  pry-byebug (~> 3.4)
   rake (~> 10.0)
   rspec (~> 3.0)
 
