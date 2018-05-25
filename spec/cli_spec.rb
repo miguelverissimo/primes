@@ -19,7 +19,7 @@ RSpec.describe Primes::Cli do
       expect(cli.cap).to eq(int)
     end
   end
-  
+
   it 'shows the usage syntax' do
     cli = Primes::Cli.new
     expect(cli.usage).to eq Primes::Cli::USAGE_TEXT

@@ -1,5 +1,3 @@
-require 'pry-byebug'
-
 module Primes
   class Cli
     DEFAULT_CAP = 10
@@ -20,7 +18,7 @@ module Primes
 
     def _parse(cli_params)
       parse_value = cli_params.is_a?(Array) ? cli_params[0] : cli_params
-      return @cap = DEFAULT_CAP if cli_params.nil?
+      return @cap = DEFAULT_CAP if parse_value.nil?
       begin
         # edge case if someone inputs floating point numbers, as those will be
         # cast to integer

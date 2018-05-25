@@ -2,5 +2,5 @@
 
 require 'primes'
 
-runner = Primes::Runner.new(ARGV)
+runner = Primes::Runner.new ARGV
 puts runner.run

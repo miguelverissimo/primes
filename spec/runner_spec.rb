@@ -1,5 +1,4 @@
 RSpec.describe Primes::Runner do
-
   it 'has a version number' do
     expect(Primes::VERSION).not_to be nil
   end

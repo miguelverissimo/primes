@@ -2,8 +2,8 @@ module Primes
   class Cache
     DEFAULT_PATH = '/cache/primes.txt'.freeze
     attr_accessor :file_path
-    
-    def initialize path = nil
+
+    def initialize(path = nil)
       @file_path = path || default_path
     end
 
@@ -22,7 +22,7 @@ module Primes
       cached_primes
     end
 
-    def save! collection
+    def save!(collection)
       File.open(file_path, 'w+') do |f|
         f.puts(collection)
       end

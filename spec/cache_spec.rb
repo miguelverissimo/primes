@@ -35,8 +35,8 @@ RSpec.describe Primes::Cache do
     list = [2, 3, 5, 7]
     @cache.save! list
 
-    expect(File.exists?(@dummy_file_path))
-    
+    expect(File.exist?(@dummy_file_path))
+
     @new_cache = Primes::Cache.new(@dummy_file_path)
     expect(@new_cache.load).to eq list
   end
