@@ -1,5 +1,6 @@
 require 'primes/version'
 require 'primes/cache'
+require 'primes/collection'
 
 module Primes
   def self.gem_root
