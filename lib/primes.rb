@@ -1,5 +1,8 @@
-require "primes/version"
+require 'primes/version'
+require 'primes/cache'
 
 module Primes
-  # Your code goes here...
+  def self.gem_root
+    Gem::Specification.find_by_name('primes').gem_dir
+  end
 end

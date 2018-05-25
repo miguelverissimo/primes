@@ -1,5 +1,5 @@
-require "bundler/setup"
-require "primes"
+require 'bundler/setup'
+require 'primes'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
