@@ -2,6 +2,7 @@ require 'primes/version'
 require 'primes/cache'
 require 'primes/collection'
 require 'primes/printer'
+require 'primes/cli'
 
 module Primes
   def self.gem_root
