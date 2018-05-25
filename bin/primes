@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'primes'
+
+runner = Primes::Runner.new(ARGV)
+puts runner.run
